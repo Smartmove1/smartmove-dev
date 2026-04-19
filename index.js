@@ -369,3 +369,13 @@ window.addEventListener('load', function () {
         document.body.style.opacity = '1';
     });
 });
+
+
+const year = document.querySelector(".year");
+
+function getYear(){
+    let y = new Date().getFullYear();
+    year.innerHTML = y;
+}
+
+getYear();

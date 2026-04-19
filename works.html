@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Works - Smartmove</title>
+
+    <!-- Google Fonts — same as main site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet"
+    />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="works.css" />
+</head>
+<body>
+
+    <!--NAVBAR -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+
+            <!-- Logo: replace src with your logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo-removebg.png" alt="Gerold Logo" />
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="works.html" class="nav-active">Works</a></li>
+                <li><a href="index.html#experience">Resume</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <a href="index.html#contact" class="btn-hire">Hire Me</a>
+
+            <button class="burger" id="burger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </nav>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="page-header-glow glow-left"></div>
+        <div class="page-header-glow glow-right"></div>
+        <div class="container page-header-inner">
+            <p class="page-eyebrow">Portfolio</p>
+            <h1 class="page-title">
+                My <span class="accent">Recent</span> Works
+            </h1>
+            <p class="page-desc">
+                Browse through my complete collection of projects. Click any
+                project to explore the full case study and details.
+            </p>
+            <div class="breadcrumb">
+                <a href="index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-sep">/</span>
+                <span class="breadcrumb-current">Works</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SEARCH AND FILTER BAR -->
+    <div class="toolbar">
+        <div class="container toolbar-inner">
+
+            <!-- Search -->
+            <div class="search-box">
+                <span class="search-icon-wrap">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input
+                    type="text"
+                    id="searchInput"
+                    class="search-input"
+                    placeholder="Search projects..."
+                    autocomplete="off"
+                />
+                <button class="search-clear-btn" id="clearBtn" aria-label="Clear search">
+                    &times;
+                </button>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs" id="filterTabs">
+                <button class="ftab active" data-filter="all">All</button>
+                <button class="ftab" data-filter="ui-ux">UI / UX</button>
+                <button class="ftab" data-filter="web">Frontend</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ============================================================
+         RESULTS COUNT
+    ============================================================ -->
+    <div class="results-bar">
+        <div class="container results-inner">
+            <p class="results-text" id="resultsText">Showing all projects</p>
+            <div class="view-toggle">
+                <button class="view-btn active" id="gridViewBtn" aria-label="Grid view">
+                    <i class="fa-solid fa-grip"></i>
+                    Grid
+                </button>
+                <button class="view-btn" id="listViewBtn" aria-label="List view">
+                     <i class="fa-solid fa-list"></i>
+                    List
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============================================================
+         PORTFOLIO GRID
+    ============================================================ -->
+    <section class="portfolio-section">
+        <div class="container">
+
+            <!-- No results message (hidden by default) -->
+            <div class="no-results hidden" id="noResults">
+                <div class="no-results-inner">
+                    <span class="no-results-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </span>
+                    <p class="no-results-title">No projects found</p>
+                    <p class="no-results-sub">
+                        Try a different keyword or select a different category.
+                    </p>
+                    <button class="btn-primary" id="resetBtn">Show All Projects</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+
+
+                <!-- PROJECT CARD 1  -->
+                <div class="portfolio-card" data-category="ui-ux" data-title="Dashboard UI Design">
+
+                    <div class="card-thumb-wrap">
+                        <img
+                            src="images/ui1.png"
+                            alt="Dashboard UI Design"
+                            class="card-thumb"
+                        />
+                        <div class="card-overlay">
+                            <a href="https://www.linkedin.com/posts/smart-move-716382326_product-items-web-design-share-7451420994902290432-ZNgc?utm_source=share&utm_medium=member_android&rcm=ACoAAFJH3YIBcAMy2bOJXUmdLEdiP5HcrDsQztM" class="card-overlay-btn">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                View Project
+                            </a>
+                        </div>
+                        <span class="card-badge">UI / UX</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2026</span>
+                            <span class="card-client">Client: Deco Company</span>
+                        </div>
+                        <h3 class="card-title"> UI Design</h3>
+                        <p class="card-desc">
+                            A clean product items web design for an e-commerce dashboard, showcasing a modern and intuitive interface for managing products, inventory, and sales analytics.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI Design</span>
+                            <span class="tag">Dashboard</span>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/smart-move-716382326_product-items-web-design-share-7451420994902290432-ZNgc?utm_source=share&utm_medium=member_android&rcm=ACoAAFJH3YIBcAMy2bOJXUmdLEdiP5HcrDsQztM" class="card-cta">
+                            View Case Study
+                                <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT CARD 2  (featured) -->
+                <div class="portfolio-card card-featured" data-category="web" data-title="Resturant Website">
+
+                    <div class="card-thumb-wrap">
+                        <img
+                            src="images/restur.1.png"
+                            alt="Brand Identity Design"
+                            class="card-thumb"
+                        />
+                        <div class="card-overlay">
+                            <a href="https://smartmove1.github.io/restaurant-website/" class="card-overlay-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <span class="card-badge">Frontend</span>
+                        <span class="card-featured-label">Restaurant Website</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2025</span>
+                            <span class="card-client">Client: ZenBite</span>
+                        </div>
+                        <h3 class="card-title">Restaurant Website</h3>
+                        <p class="card-desc">
+                                Full redesign of a restaurant chain website with online
+                                reservation system.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://smartmove1.github.io/restaurant-website/" class="card-cta">
+                            View Case Study
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!--  PROJECT CARD 3 -->
+                <div class="portfolio-card" data-category="web" data-title="E-Commerce Website">
+
+                    <div class="card-thumb-wrap">
+                        <img
+                            src="images/e-com1.png"
+                            alt="E-Commerce Website"
+                            class="card-thumb"
+                        />
+                        <div class="card-overlay">
+                            <a href="https://smartmove1.github.io/shopwave-product/" class="card-overlay-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <span class="card-badge">Frontend</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2025</span>
+                            <span class="card-client">Client: ShopWave</span>
+                        </div>
+                        <h3 class="card-title">E-Commerce Website</h3>
+                        <p class="card-desc">
+                            Full responsive e-commerce website with product listings,
+                            cart system, and a streamlined checkout experience.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://smartmove1.github.io/shopwave-product/" class="card-cta">
+                            View Case Study
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT CARD 4 -->
+                <div class="portfolio-card" data-category="web" data-title="Car Rental Website">
+
+                    <div class="card-thumb-wrap">
+                        <img
+                            src="images/car1.png"
+                            alt="Car Rental Website"
+                            class="card-thumb"
+                        />
+                        <div class="card-overlay">
+                            <a href="https://smartmove1.github.io/primeride/" class="card-overlay-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <span class="card-badge">Frontend</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2026</span>
+                            <span class="card-client">Client: PrimeRide</span>
+                        </div>
+                        <h3 class="card-title">Car Rental Website</h3>
+                        <p class="card-desc">
+                            
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://smartmove1.github.io/primeride/" class="card-cta">
+                            View Case Study
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!--
+                     PROJECT CARD 5 -->
+                <div class="portfolio-card" data-category="ui-ux" data-title="Travel Booking Platform">
+
+                    <div class="card-thumb-wrap">
+                        <img
+                            src="images/work-5.jpg"
+                            alt="Travel Booking Platform"
+                            class="card-thumb"
+                        />
+                        <div class="card-overlay">
+                            <a href="project-detail.html?id=5" class="card-overlay-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <span class="card-badge">UI / UX</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2026</span>
+                            <span class="card-client">Client: Travel Agency</span>
+                        </div>
+                        <h3 class="card-title">Travel Booking Platform</h3>
+                        <p class="card-desc">
+                            End-to-end UX design for a travel booking platform covering
+                            search, filters, booking flow, and confirmation screens.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">UX Research</span>
+                            <span class="tag">Wireframes</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                        <a href="project-detail.html?id=5" class="card-cta">
+                            View Case Study
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!--   PROJECT CARD 6 -->
+                <div class="portfolio-card" data-category="web" data-title="Calculator">
+
+                    <div class="card-thumb-wrap">
+                        <img
+                            src="images/calculator.png"
+                            alt="Calculator"
+                            class="card-thumb"
+                        />
+                        <div class="card-overlay">
+                            <a href="https://smartmove1.github.io/calculator/" class="card-overlay-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <span class="card-badge">Frontend</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2024</span>
+                            <span class="card-client">Calculator</span>
+                        </div>
+                        <h3 class="card-title">Calculator</h3>
+                        <p class="card-desc">
+                            Calculator
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://smartmove1.github.io/calculator/" class="card-cta">
+                            View Case Study
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT CARD 7 -->
+                <div class="portfolio-card" data-category="web" data-title="Hotel Booking Website">
+
+                    <div class="card-thumb-wrap">
+                        <img
+                            src="images/hotel.png"
+                            alt="Hotel Booking Website"
+                            class="card-thumb"
+                        />
+                        <div class="card-overlay">
+                            <a href="https://smartmove1.github.io/smarthotel/" class="card-overlay-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <span class="card-badge">Frontend</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2025</span>
+                            <span class="card-client">Client: AzureBay </span>
+                        </div>
+                        <h3 class="card-title">Hotel Booking Website</h3>
+                        <p class="card-desc">
+                            Full redesign of a hotel booking website with online
+                            reservation system.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://smartmove1.github.io/smarthotel/" class="card-cta">
+                            View Case Study
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT CARD 8 -->
+                <div class="portfolio-card" data-category="web" data-title="Health and Fitness Website">
+
+                    <div class="card-thumb-wrap">
+                        <img
+                            src="images/fit.png"
+                            alt="Health and Fitness Website"
+                            class="card-thumb"
+                        />
+                        <div class="card-overlay">
+                            <a href="https://smartmove1.github.io/smartFitness/" class="card-overlay-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <span class="card-badge">Frontend</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2026</span>
+                            <span class="card-client">IronPluse</span>
+                        </div>
+                        <h3 class="card-title">Health and Fitness Website</h3>
+                        <p class="card-desc">
+                            A responsive website for a health and fitness brand with workout
+                            plans, progress tracking, and nutrition logging features.
+                            from minimalist marks to complex emblems and wordmarks.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://smartmove1.github.io/smartFitness/" class="card-cta">
+                            View Case Study
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT CARD 9 -->
+                <div class="portfolio-card" data-category="web" data-title="Nature View Website">
+
+                    <div class="card-thumb-wrap">
+                        <img
+                            src="images/nature.png"
+                            alt="Nature View Website"
+                            class="card-thumb"
+                        />
+                        <div class="card-overlay">
+                            <a href="https://smartmove1.github.io/nature-view/" class="card-overlay-btn">
+                                View Project
+                            </a>
+                        </div>
+                        <span class="card-badge">Frontend</span>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">2025</span>
+                            <span class="card-client">Client: Nature View</span>
+                        </div>
+                        <h3 class="card-title">Nature View Website</h3>
+                        <p class="card-desc">
+                             Website for a nature photography portfolio with image galleries
+                            and a blog section.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://smartmove1.github.io/nature-view/" class="card-cta">
+                            View Case Study
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!--
+                    =====================================================
+                    ADD MORE PROJECTS HERE
+                    Copy the block below and paste it before this comment.
+                    =====================================================
+
+                <div class="portfolio-card" data-category="CATEGORY" data-title="PROJECT TITLE">
+                    <div class="card-thumb-wrap">
+                        <img src="images/your-image.jpg" alt="Project Title" class="card-thumb" />
+                        <div class="card-overlay">
+                            <a href="project-detail.html?id=10" class="card-overlay-btn">View Project</a>
+                        </div>
+                        <span class="card-badge">CATEGORY LABEL</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-year">YEAR</span>
+                            <span class="card-client">Client: NAME</span>
+                        </div>
+                        <h3 class="card-title">PROJECT TITLE</h3>
+                        <p class="card-desc">Short description of the project goes here.</p>
+                        <div class="card-tags">
+                            <span class="tag">Tag 1</span>
+                            <span class="tag">Tag 2</span>
+                        </div>
+                        <a href="project-detail.html?id=10" class="card-cta">View Case Study</a>
+                    </div>
+                </div>
+                -->
+
+
+            </div>
+            <!-- end #portfolioGrid -->
+
+        </div>
+    </section>
+
+
+    <!--  CALL TO ACTION — bottom of page -->
+    <section class="works-cta">
+        <div class="works-cta-glow"></div>
+        <div class="container works-cta-inner">
+            <h2 class="works-cta-title">
+                Have a Project in <span class="accent">Mind?</span>
+            </h2>
+            <p class="works-cta-desc">
+                Let's collaborate and build something great together.
+            </p>
+            <a href="index.html#contact" class="btn-primary">Get In Touch</a>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <a href="index.html" class="footer-logo">
+                <img src="images/logo-removebg.png" alt="Gerold Logo" />
+            </a>
+
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+            </ul>
+
+            <p class="footer-copy"><span class="year">2025</span> SmartMove. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+
+    <script src="works.js"></script>
+</body>
+</html>
